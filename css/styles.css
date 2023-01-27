@@ -695,6 +695,11 @@ body {
   overflow: auto;
 }
 
+.portfolio-link:hover .portfolio-foto-text,
+.portfolio-link:focus .portfolio-foto-text {
+  transform: translateY(0%);
+}
+
 .portfolio-item {
   border: 1px solid var(--accent-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
