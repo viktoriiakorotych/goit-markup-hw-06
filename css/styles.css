@@ -273,11 +273,11 @@ padding-bottom: 96px;
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 /*  gap: 24px;
 */
-gap: 72px;
+  gap: 72px;
 }
 
 .feature-block {
@@ -333,7 +333,6 @@ gap: 72px;
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-
 }
 
 .team-main-title {
@@ -483,23 +482,21 @@ gap: 72px;
 }
 
 /* _______________________ FOOTER __________________________*/
+
 .footer {
   background-color: var(--dark-color);
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-
 .footer-container-list {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  /* margin-right: 120px; */
-  /* gap: 120px; */
+  align-items: baseline;
+  /* margin-right: 120px;
+  gap: 120px; */
 }
 
 .footer-container-logo {
-  margin-right: 16px;
-  margin-left: 16px;
+  margin-right: 120px;
 
 }
 
@@ -512,6 +509,7 @@ gap: 72px;
   text-transform: uppercase;
   color: #4D5AE5;
   margin-bottom: 17px;
+
 }
 
 .logo-web-footer {
@@ -566,14 +564,12 @@ gap: 72px;
 }
 
 .footer-form{
-   display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .footer-subscribe-label {
   color: #FFFFFF;
-  /* margin-bottom: 16px; */
-
 }
 
 .footer-subscribe-input {
@@ -595,13 +591,13 @@ gap: 72px;
   min-width: 165px; 
   height: 40px;
   display: flex; 
-   justify-content: center;
-align-items: center;
-font-family: "Roboto", sans-serif;
- font-size: 16px;
-font-weight: 500;
- line-height: 1.5;
- letter-spacing: 0.04em;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
   background-color: #4D5AE5;
@@ -613,8 +609,6 @@ font-weight: 500;
   margin-left: 16px; 
   fill: #FFFFFF;
 }
-
-
 
 /*______________________________________PORTFOLIO_______________________*/
 
@@ -1091,7 +1085,38 @@ border: 1px solid #4D5AE5;
   @media screen and (min-width: 768px){
     .container { 
       width: 736px;
- 
+    }
+
+    .header {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--accent-color);
+      box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
+    }
+
+    .main-title {
+      padding-top: 112px;
+      padding-bottom: 112px;
+      background-color: var(--dark-color);
+      background-image: var(--bg-gradient), url(../images/people_office_bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      max-width: 1440px;
+      height: 436px;
+
+    }
+
+    .main-title-text {
+      width: 600px;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 1.07;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: var(--white-color);
+      margin: 0 auto;
+      margin-bottom: 36px;
     }
 
     .features {
@@ -1173,8 +1198,6 @@ border: 1px solid #4D5AE5;
 
     .features-list {
       gap: 0 24px;
-      padding-left: 156px;
-      padding-right: 156px;
       flex-wrap: nowrap;
     }
 
@@ -1206,19 +1229,23 @@ border: 1px solid #4D5AE5;
       width: calc((100% - 48px) / 3);
     }
 
+    /* _______________________ FOOTER __________________________*/
+
     .footer {
       background-color: var(--dark-color);
       padding-top: 100px;
       padding-bottom: 100px;
     }
-
     .footer-container-list {
       display: flex;
-      align-items: center;
+      align-items: baseline;
+      /* margin-right: 120px;
+      gap: 120px; */
     }
-      
+
     .footer-container-logo {
       margin-right: 120px;
+
     }
 
     .footer-logo {
@@ -1230,12 +1257,107 @@ border: 1px solid #4D5AE5;
       text-transform: uppercase;
       color: #4D5AE5;
       margin-bottom: 17px;
+
     }
 
-    
+    .logo-web-footer {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.33;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #F4F4FD;
+      margin-bottom: 17px;
 
+    }
 
+    .footer-text {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+      color:#F4F4FD;
+      max-width: 264px;
+    }
 
+    .footer-container-social {
+      margin-right: 80px;
+    }
+
+    .footer-soc-text {
+      color: var(--white-color);
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .footer-soc-list {
+      gap: 16px;
+    }
+
+    .footer-soc-link {
+      background-color: #4d5ae5;
+    }
+
+    .footer-soc-link:hover,
+    .footer-soc-link:focus {
+      background-color: #31d0aa;
+    }
+
+    .footer-container-subscribe{
+      /* display: flex; */
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-form{
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer-subscribe-label {
+      color: #FFFFFF;
+    }
+
+    .footer-subscribe-input {
+      font-size: 12px;
+      line-height: 2;
+      letter-spacing: 0.04em;
+      padding-left: 16px; 
+      border-radius: 4px; 
+      /* margin-right: 24px; */
+      width: 264px;
+      height: 40px;
+      color: #ffffff;
+      border: 1px solid #ffffff; 
+      background-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+    }
+
+    .footer-button-submit {
+      min-width: 165px; 
+      height: 40px;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      cursor: pointer;
+      background-color: #4D5AE5;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .footer-button-icon{
+      margin-left: 16px; 
+      fill: #FFFFFF;
+    }
 
 
   }
