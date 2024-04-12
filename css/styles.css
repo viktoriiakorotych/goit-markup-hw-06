@@ -1073,6 +1073,20 @@ border: 1px solid #4D5AE5;
 
 
   @media screen and (min-width: 768px){
+    .main-title {
+      padding-top: 72px;
+      padding-bottom:72px;
+      background-color: var(--dark-color);
+      background-image: var(--bg-gradient), url(../images/people_office_bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      max-width: 320px;
+
+      margin: 0 auto;
+    }
+
+
     .container { 
       /* width: 736px; */
       width: 768px;
