@@ -202,7 +202,7 @@ body {
   padding-top: 72px;
   padding-bottom:72px;
   background-color: var(--dark-color);
-  background-image: var(--bg-gradient), url(../images/people_office_bg.jpg);
+  background-image: var(--bg-gradient), url(../images/people_office_bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1073,20 +1073,6 @@ border: 1px solid #4D5AE5;
 
 
   @media screen and (min-width: 768px){
-    .main-title {
-      padding-top: 72px;
-      padding-bottom:72px;
-      background-color: var(--dark-color);
-      background-image: var(--bg-gradient), url(../images/people_office_bg.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      max-width: 320px;
-
-      margin: 0 auto;
-    }
-
-
     .container { 
       /* width: 736px; */
       width: 768px;
@@ -1103,7 +1089,7 @@ border: 1px solid #4D5AE5;
       padding-top: 112px;
       padding-bottom: 112px;
       background-color: var(--dark-color);
-      background-image: var(--bg-gradient), url(../images/people_office_bg.jpg);
+      background-image: var(--bg-gradient), url(../images/people_office_bg-tab.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -1213,7 +1199,7 @@ border: 1px solid #4D5AE5;
 
 /* _______________1200px ______________________________ */
   @media screen and (min-width: 1200px){
-   
+
     .header {
       padding-top: 24px;
       padding-bottom: 24px;
